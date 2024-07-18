@@ -1,11 +1,11 @@
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    height: 100px;
     color: #fff;
     gap: 1em;
     width: min(100%, 800px);
     margin-inline: auto;
+    margin-bottom: 2rem;
 }
 
 .gridContainer > img {
