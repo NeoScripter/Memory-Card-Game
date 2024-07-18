@@ -11,7 +11,7 @@ function shuffleArray(array) {
   return newArray;
 }
 
-function Body() {
+function Body({ updateUniqueIds }) {
   const pokemonData = usePokemonData();
   const [pokemonArray, setPokemonArray] = useState([]);
 
@@ -19,14 +19,15 @@ function Body() {
     setPokemonArray(pokemonData);
   }, [pokemonData]);
 
-  function rearrangeCards() {
+  function rearrangeCards(id) {
     setPokemonArray((prev) => shuffleArray(prev));
+    updateUniqueIds(id);
   }
 
   return (
     <div className={styles.cardsContainer}>
       {pokemonArray.map((pokemon, index) => (
-        <div key={index} className={styles.pokemonCard} onClick={rearrangeCards}>
+        <div key={pokemon.id} className={styles.pokemonCard} onClick={() => rearrangeCards(pokemon.id)}>
           <img src={pokemon.image} alt={pokemon.name} />
           <p>{pokemon.name}</p>
         </div>

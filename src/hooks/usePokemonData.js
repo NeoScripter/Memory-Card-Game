@@ -10,6 +10,7 @@ const fetchPokemonData = async () => {
       results.map(async (pokemon) => {
         const pokemonDetailResponse = await axios.get(pokemon.url);
         return {
+          id: pokemonDetailResponse.data.id,
           name: pokemon.name,
           image: pokemonDetailResponse.data.sprites.other['official-artwork'].front_default,
         };

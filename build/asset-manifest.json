@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f6403f95.css",
+    "main.js": "/static/js/main.f2ba18e2.js",
+    "static/media/logo.png": "/static/media/logo.0b5095772f694cbfc21b.png",
+    "static/media/game-win.png": "/static/media/game-win.0bfc5cee929f59b062bf.png",
+    "static/media/Roboto-Black.woff": "/static/media/Roboto-Black.a2c44ee0d39d34bd2c66.woff",
+    "static/media/Roboto-Medium.woff": "/static/media/Roboto-Medium.368d61c1c1edadcef26e.woff",
+    "static/media/Roboto-Bold.woff": "/static/media/Roboto-Bold.f01cee897c02d821d657.woff",
+    "static/media/Roboto-Regular.woff": "/static/media/Roboto-Regular.b9ed0af95c60cec80fbf.woff",
+    "static/media/game-lose.png": "/static/media/game-lose.36474e797d05496955a4.png",
+    "static/media/Roboto-Medium.woff2": "/static/media/Roboto-Medium.70ace3870f471997ceb7.woff2",
+    "static/media/Roboto-Black.woff2": "/static/media/Roboto-Black.a04aceecdab55c0e2ea1.woff2",
+    "static/media/Roboto-Bold.woff2": "/static/media/Roboto-Bold.002079d85a6f27587d17.woff2",
+    "static/media/Roboto-Regular.woff2": "/static/media/Roboto-Regular.9429985be4f46ec8fcfc.woff2",
+    "index.html": "/index.html",
+    "main.f6403f95.css.map": "/static/css/main.f6403f95.css.map",
+    "main.f2ba18e2.js.map": "/static/js/main.f2ba18e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6403f95.css",
+    "static/js/main.f2ba18e2.js"
+  ]
+}

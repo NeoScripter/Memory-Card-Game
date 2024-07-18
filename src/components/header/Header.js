@@ -2,16 +2,16 @@ import React from 'react'
 import logo from './logo.png'
 import styles from './Header.module.css'
 
-function Header() {
+function Header({ currentScore, bestScore }) {
   return (
     <div className={styles.gridContainer}>
         <img src={logo} alt="Pikachu"/>
         <div className={styles.titleWrapper}>
             <h1>Memory Card Game</h1>
-            <p>Get points by clicking on an image but don't click on any more than once!</p>
+            <p>Try to select every Pokemon without repeating your choice!</p>
             <div className={styles.score}>
-                <div>Score: 0</div>
-                <div>Best Score: 0</div>
+                <div>Score: {currentScore}</div>
+                <div>Best Score: {bestScore}</div>
             </div>
         </div>
     </div>

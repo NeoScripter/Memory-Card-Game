@@ -1,0 +1,95 @@
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+
+.popupOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.popup {
+    background: rgb(86,114,174);
+    background: linear-gradient(0deg, rgba(86,114,174,1) 0%, rgba(11,22,38,1) 90%);
+    min-height: 50px;
+    min-width: 100px;
+    color: #fff;
+    display: flex;
+    width: min(600px, calc(100% - 60px));
+    border-radius: 1em;
+    padding: 1em;
+    gap: 1em;
+    border: 0.2em solid #fff;
+}
+
+.popup img {
+    width: 40%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1.36;
+}
+
+.popupContent {
+    --_fs: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: var(--_fs);
+    font-family: Black;
+    text-transform: uppercase;
+    gap: 0.5em;
+    word-wrap: nowrap;
+    min-width: max-content;
+    text-align: center;
+}
+
+.resetBtn {
+    font-size: calc(var(--_fs) / 1.7);
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 1em;
+    padding: 0.2em 0.5em;
+    border: 0.1em solid #fff;
+    transition: scale 0.3s ease;
+}
+
+.resetBtn:is(:hover, :active, :focus) {
+    scale: 1.05;
+}
+
+@media screen and (min-width: 395px) {
+    .popupContent {
+        --_fs: 2rem;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .popupContent {
+        --_fs: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .popupContent {
+        --_fs: 3rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .popupContent {
+        --_fs: 3.5rem;
+    }
+}

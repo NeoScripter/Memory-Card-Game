@@ -33,7 +33,7 @@
     text-align: center;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 360px) {
     .cardsContainer {
         --_column-width: 100px;
         --_font-size: 0.8rem;
