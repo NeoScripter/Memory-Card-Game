@@ -18,6 +18,7 @@ function App() {
       setActivePopup(true);
       setGameResult(true);
       setBestScore(0);
+      setCurrentScore(0);
     }
   }, [currentScore, bestScore])
 
