@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     if (currentScore > bestScore) {
       setBestScore(currentScore);
-      if (bestScore === 20) {
+      if (bestScore === 15) {
         setActivePopup(true);
         setGameResult(true);
       }
