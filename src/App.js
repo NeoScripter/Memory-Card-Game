@@ -17,6 +17,9 @@ function App() {
     if (bestScore === 15) {
       setActivePopup(true);
       setGameResult(true);
+    } else {
+      setActivePopup(false);
+      setGameResult(false);
     }
   }, [currentScore, bestScore])
 
